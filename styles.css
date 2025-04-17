@@ -1,0 +1,92 @@
+/* General styling for the game */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f8ff;
+  }
+  
+  #game {
+    margin: 50px auto;
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #ffffff;
+  }
+  
+  /* Styling for question choices */
+  #choices {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .choice {
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .choice:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  }
+  
+  .choice:active {
+    transform: scale(0.9);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Styling for buttons */
+  #nextButton {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #32cd32;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: fadeIn 1s ease;
+  }
+  
+  #nextButton:hover {
+    background-color: #228b22;
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Leaderboard styling */
+  #leaderboard {
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #ffffff;
+  }
+  
+  #scoreList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #scoreList li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+  }
+  
