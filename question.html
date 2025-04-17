@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess Game with Pictures</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>What Would Your Friend Choose?</h1>
+  <div id="game">
+    <p id="question">If there was a fire, what would your friend save?</p>
+    <div id="choices">
+      <img class="choice" src="money.jpg" alt="Money" onclick="selectAnswer(0)">
+      <img class="choice" src="girlfriend.jpg" alt="Girlfriend" onclick="selectAnswer(1)">
+      <img class="choice" src="mother.jpg" alt="Mother" onclick="selectAnswer(2)">
+      <img class="choice" src="degree.jpg" alt="Degree Certificate" onclick="selectAnswer(3)">
+    </div>
+    <button id="nextButton" onclick="nextQuestion()">Next</button>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
